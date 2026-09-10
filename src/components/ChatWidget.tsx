@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type Mensagem = { autor: "usuario" | "assistente"; texto: string };
 
@@ -16,6 +16,11 @@ export function ChatWidget() {
   const [entrada, setEntrada] = useState("");
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [enviando, setEnviando] = useState(false);
+  const fimDasMensagensRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    fimDasMensagensRef.current?.scrollIntoView({ block: "end" });
+  }, [mensagens, enviando]);
 
   async function enviar() {
     const texto = entrada.trim();
@@ -78,6 +83,7 @@ export function ChatWidget() {
                 Digitando...
               </div>
             )}
+            <div ref={fimDasMensagensRef} />
           </div>
           <form
             onSubmit={(e) => {

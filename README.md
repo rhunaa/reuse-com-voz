@@ -8,6 +8,7 @@
 Versão web da plataforma **ReUse!**, desenvolvida com **Next.js** e integrada a um banco de dados **PostgreSQL** através do **Prisma ORM**. O objetivo desta fase não foi recriar todo o aplicativo mobile na web, e sim disponibilizar as áreas mais importantes da plataforma (catálogo de produtos, cadastro de itens e perfil do usuário) como uma via de acesso adicional para o usuário final.
 
 **Site publicado:** https://reuse-web-bay.vercel.app
+> ⚠️ Essa versão publicada é a da entrega anterior (Fase 6) e **não inclui o assistente virtual** desta atividade — o chatbot com o Watson Assistant não foi publicado, existe apenas no código deste repositório e ao rodar o projeto localmente. Esta atividade não exige link de hospedagem, apenas o link do repositório.
 
 ## Tecnologias utilizadas
 

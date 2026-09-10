@@ -1,5 +1,8 @@
 # ReUse! — Plataforma Web
 
+> **Este repositório é a entrega da Atividade 02 — "ReUse com voz: Criando um assistente virtual com IBM Watson".**
+> Ele contém o código completo da plataforma ReUse! em Next.js, incluindo o assistente virtual integrado ao IBM Watson Assistant — veja a **seção 4** deste README para os detalhes dessa atividade específica.
+
 **Autora:** Bruna Pereira Cordeiro — RM 563153
 
 Versão web da plataforma **ReUse!**, desenvolvida com **Next.js** e integrada a um banco de dados **PostgreSQL** através do **Prisma ORM**. O objetivo desta fase não foi recriar todo o aplicativo mobile na web, e sim disponibilizar as áreas mais importantes da plataforma (catálogo de produtos, cadastro de itens e perfil do usuário) como uma via de acesso adicional para o usuário final.
